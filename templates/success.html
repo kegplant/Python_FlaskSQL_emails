@@ -1,0 +1,17 @@
+<html>
+        <head>
+        <title>Emails</title>
+    
+        </head>
+        <body>
+            success!
+            {%for email in emails%}
+            <form action='\delete\{{email['id']}}'>
+                <p><span>{{email['email']}} </span> {{email['date_created']}}<button>delete</button></p>
+            </form>
+
+            {%endfor%}
+            
+        </body>
+    </html>
+    
